@@ -64,14 +64,14 @@ const FilterSelect = ({ filtro, setFiltro }) => {
               width: posicion.ancho,
               zIndex: 9999,
             }}
-            className="overflow-hidden rounded-2xl bg-pink-50 shadow-lg shadow-pink-300/30"
+            className="overflow-hidden rounded-3xl border border-pink-200/60 bg-pink-100/90 shadow-lg shadow-pink-300/40 backdrop-blur-md"
           >
             {opciones.map((opcion) => (
               <button
                 key={opcion.valor}
                 type="button"
                 onClick={() => seleccionarFiltro(opcion)}
-                className={`block w-full cursor-pointer px-3 py-2 text-left text-sm text-pink-600 transition-colors duration-200 hover:!bg-pink-300 active:!bg-pink-400 ${
+                className={`block w-full cursor-pointer px-3 py-2 text-left font-mono text-sm text-pink-600 transition-colors duration-200 hover:!bg-pink-300 active:!bg-pink-400  ${
                   opcion.valor === filtro
                     ? "bg-pink-200"
                     : "bg-pink-50"

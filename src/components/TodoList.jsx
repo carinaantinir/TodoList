@@ -12,18 +12,18 @@ const TodoList = (props) => {
                     className="absolute left-0 w-14 sm:w-16 opacity-80"
             />
 
-            <h2 className="text-center text-xl font-medium text-pink-500">
+            <h2 className="text-center text-xl font-mono font-medium text-pink-500">
                 Lista de tareas
             </h2>
         </div>
 
         {props.tareas.length === 0 && (
-            <p className="py-6 text-center text-pink-500">
+            <p className="py-6 text-center font-mono text-pink-500">
                 {props.filtro === "pendientes"
                     ? "No hay tareas pendientes"
                     : props.filtro === "completadas"
-                    ? "No hay tareas completadas"
-                    : "Todavía no hay tareas"}
+                    ? "Todavía no completaste ninguna tarea."
+                    : "Todavía no agregaste ninguna tarea."}
             </p>
             )}
 
