@@ -1,0 +1,54 @@
+.binary-rain {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.binary-column {
+    position: absolute;
+    top: -100%;
+    writing-mode: vertical-rl;
+    font-family: monospace;
+    color: rgb(244 114 182 / 0.18);
+    letter-spacing: -1px;
+    text-shadow:
+    0 0 4px rgba(244, 114, 182, 0.15),
+    0 0 10px rgba(242, 132, 189, 0.10);
+    animation: binary-fall 14s linear infinite;
+}
+
+@keyframes binary-fall {
+    from {
+    transform: translateY(0);
+    }
+
+    to {
+    transform: translateY(200%);
+    }
+}
+
+.dashboard-content > :not(.binary-rain) {
+    position: relative;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .binary-column {
+    animation: none;
+    top: 0;
+    }
+}
+
+.dashboard-content > form {
+    position: relative;
+    z-index: 50;
+
+}
+
+.dashboard-content > section {
+    position: relative;
+    z-index: 1;
+}
+
