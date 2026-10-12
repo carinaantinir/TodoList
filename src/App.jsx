@@ -91,7 +91,7 @@ function App() {
                     <Button
                       texto="Regresar al comienzo"
                       onClick={() => setPantallaInicio(true)}
-                      className="!rounded-full border border-pink-300/40 !bg-pink-200/40 px-5 py-2.5 font-mono font-medium tracking-wide text-pink-600 shadow-md shadow-pink-300/40  backdrop-blur-md transition-all duration-300 hover:border-pink-400/60 hover:!bg-pink-300 hover:shadow-lg hover:shadow-pink-200/20"
+                      className="!rounded-full border border-pink-300/40 !bg-pink-200/20 px-5 py-2.5 font-mono font-medium tracking-wide text-pink-600 shadow-md shadow-pink-300/40  backdrop-blur-md transition-all duration-300 hover:border-pink-400/60 hover:!bg-pink-300 hover:shadow-lg hover:shadow-pink-200/20"
                     />
                   </div>
 
