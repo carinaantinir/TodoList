@@ -6,7 +6,11 @@ const Form = (props) => {
 
     const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!texto.trim()) return;
+
     props.agregarTarea(texto);
+    setTexto("");
     };
 
     return (
@@ -17,7 +21,7 @@ const Form = (props) => {
                 value={texto}
                 onChange={(e) => setTexto(e.target.value)}
             />
-            <Button type="submit" texto="Agregar" />
+            <Button type="submit" texto="Agregar tarea" />
             </form>
         );
 };

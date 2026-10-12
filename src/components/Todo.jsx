@@ -5,7 +5,7 @@ import Button from "./Button"
 const Todo = (props) => {
     return (
         <div>
-            <p>{props.tarea.texto}</p>s
+            <p>{props.tarea.texto}</p>
         
         <Button 
             texto="Completar"
