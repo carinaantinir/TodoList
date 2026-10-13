@@ -57,7 +57,11 @@ function App() {
 
         <LluviaBinarios variant="exterior" />
 
-        <div className="relative z-10 w-full max-w-xl overflow-visible rounded-3xl bg-white/70 shadow-2xl backdrop-blur-md">
+        <div className={`relative z-10 w-full max-w-xl overflow-visible rounded-3xl  shadow-2xl backdrop-blur-md"
+            ${pantallaInicio ? "bg-transparent" : "bg-white/70"
+
+            }`}
+            >
 
           {pantallaInicio && (
           <Intro onEntrar={() => setPantallaInicio(false)} />
