@@ -70,5 +70,7 @@ El proyecto integra conocimientos de React, JavaScript, manejo del estado, persi
 
 ## Enlaces
 
-- GitHub: https://github.com/carinaantinir/TodoList
-- Aplicación desplegada: https://todo-list-three-sigma-51.vercel.app/
+## Enlaces
+
+- [Ver aplicación web](https://todo-list-three-sigma-51.vercel.app/)
+- [Ver repositorio en GitHub](https://github.com/carinaantinir/TodoList)
