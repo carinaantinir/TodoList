@@ -16,22 +16,22 @@ const Intro = (props) => {
                         className="w-24 h-auto objet-contain"
                     />    
 
-                    <h1 className="mb-3 text-2xl font-normal text-pink-500">
+                    <h1 className="mb-3 text-2xl font-mono font-normal text-pink-500">
                         ¿Querés salir del bucle?
                     </h1>
 
-                    <p className="text-pink-500">
+                    <p className="text-pink-500 font-mono">
                         Empezá por vos.
                     </p>
 
-                    <p className="text-pink-500">
+                    <p className="text-pink-500 font-mono">
                         Seguí al conejo rosado.
                     </p>
 
                     <Button
                         texto="Seguir"
                         onClick={() => setMostrarVideo(true)}
-                        className="mt-3 rounded-full border border-pink-300 bg-transparent px-8 py-3 font-normal text-pink-500 shadow-none hover:bg-pink-100"
+                        className="mt-3 rounded-full border border-pink-300 bg-transparent px-8 py-3 font-mono font-normal text-pink-500 shadow-none hover:bg-pink-100"
                     />
                 </section>
             )}

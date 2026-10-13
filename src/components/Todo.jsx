@@ -13,7 +13,7 @@ const Todo = (props) => {
             }`}
         >
             <p
-            className={`min-w-0 break-words text-pink-600 transition-all duration-300 ${
+            className={`min-w-0 break-words font-mono text-pink-600 transition-all duration-300 ${
                 props.tarea.completada
                 ? "line-through opacity-50"
                 : ""

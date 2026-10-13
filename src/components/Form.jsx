@@ -28,10 +28,10 @@ const Form = (props) => {
 
         <input
           type="text"
-          placeholder="     Escribe tu tarea..."
+          placeholder="Escribí tu tarea..."
           value={texto}
           onChange={(e) => setTexto(e.target.value)}
-          className="w-full rounded-full border border-pink-100 bg-white/80 py-4 sm:py-3 pl-12 pr-4 text-pink-600 shadow-lg shadow-pink-300/30 outline-none placeholder:text-pink-400 focus:ring-2 focus:ring-pink-300"
+          className="w-full rounded-full border border-pink-100 bg-pink-2200/40 py-4 sm:py-3 pl-10  pr-4 font-mono text-sm text-pink-600 shadow-lg shadow-pink-300/40 outline-none placeholder:text-pink-400 focus:ring-2 focus:ring-pink-300"
         />
       </div>
 

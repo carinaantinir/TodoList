@@ -53,50 +53,50 @@ function App() {
   );
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-b from-pink-50 to-pink-200 p-4">
+      <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-b from-pink-50 to-pink-200 p-4">
 
-      <LluviaBinarios variant="exterior" />
+        <LluviaBinarios variant="exterior" />
 
-      <div className="relative z-10 w-full max-w-xl overflow-visible rounded-3xl bg-white/70 shadow-2xl backdrop-blur-md">
+        <div className="relative z-10 w-full max-w-xl overflow-visible rounded-3xl bg-white/70 shadow-2xl backdrop-blur-md">
 
-        {pantallaInicio && (
+          {pantallaInicio && (
           <Intro onEntrar={() => setPantallaInicio(false)} />
-        )}
+          )}
 
-        {!pantallaInicio && (
-          <main className="dashboard-content relative p-5 sm:p-8">
+          {!pantallaInicio && (
+            <main className="dashboard-content relative p-5 sm:p-8">
 
-            <LluviaBinarios variant="fondo" />
-            <LluviaBinarios variant="medio" />
-            <LluviaBinarios variant="frente" />
+                <LluviaBinarios variant="fondo" />
+                <LluviaBinarios variant="medio" />
+                <LluviaBinarios variant="frente" />
 
-            <h1 className="mb-6 text-center text-4xl font-light tracking-wide text-pink-600">
-              Todo List
-            </h1>
+                <h1 className="mb-6 text-center text-4xl font-mono font-semibid tracking-wide text-pink-600">
+                  Todo List
+                </h1>
 
-            <Form
-              agregarTarea={agregarTarea}
-              filtro={filtro}
-              setFiltro={setFiltro}
-            />
+                <Form
+                  agregarTarea={agregarTarea}
+                  filtro={filtro}
+                  setFiltro={setFiltro}
+                />
 
-            <TodoList
-              tareas={tareasFiltradas}
-              filtro={filtro}
-              completarTarea={completarTarea}
-              eliminarTarea={eliminarTarea}
-            />
+                <TodoList
+                  tareas={tareasFiltradas}
+                  filtro={filtro}
+                  completarTarea={completarTarea}
+                  eliminarTarea={eliminarTarea}
+                />
 
-            <div className="mt-6 flex justify-center">
-              <Button
-                texto="Regresar al comienzo"
-                onClick={() => setPantallaInicio(true)}
-                className="rounded-full border border-pink-300 bg-transparent px-5 font-normal text-pink-500 shadow-none hover:bg-pink-100"
-              />
-            </div>
+                <div className="mt-6 flex justify-center">
+                    <Button
+                      texto="Regresar al comienzo"
+                      onClick={() => setPantallaInicio(true)}
+                      className="!rounded-full border border-pink-300/40 !bg-pink-200/20 px-5 py-2.5 font-mono font-medium tracking-wide text-pink-600 shadow-md shadow-pink-300/40  backdrop-blur-md transition-all duration-300 hover:border-pink-400/60 hover:!bg-pink-300 hover:shadow-lg hover:shadow-pink-200/20"
+                    />
+                  </div>
 
-          </main>
-        )}
+              </main>
+            )}
 
       </div>
     </div>
